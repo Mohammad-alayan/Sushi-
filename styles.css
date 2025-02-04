@@ -399,7 +399,7 @@ p {
     margin-left: 36%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1188px) {
     .reservation-button {
         width: 100%;
         font-size: 15px;
