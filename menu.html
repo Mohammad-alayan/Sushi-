@@ -28,7 +28,23 @@
         padding-left: 10px !important;
 
     }
-        }
+        }@media (max-width: 480px) {
+    .logo-text{
+        font-size: 13px !important;
+        margin-left: 15% !important;
+
+        
+    }
+    .reservation-button {
+        width: 100%;
+        margin-left: -0% !important;
+        font-size: 13px !important;
+        
+    height: 63px !important;
+        max-width: 200px;
+        background-color: wheat !important;
+    }}
+  
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
            
@@ -140,11 +156,11 @@
 </head>
 <body>
     <nav class="navbar" style="padding:0px;" >
-        <button class="menu-button" onclick="toggleMenu()" style=" margin-left: 60px; background-color: wheat;">☰</button>
+        <button class="menu-button" onclick="toggleMenu()" style=" margin-left: 30px; background-color: wheat;">☰</button>
         
         <span class="logo-text" style="margin-left: 70px;">Sushi Harbor</span>
         
-     <a href="reserve.html"  style=" text-decoration: none; color: wheat; margin-right: 60px;" >   <button class="reservation-button">Make reservation</button></a>
+     <a href="reserve.html"  style=" text-decoration: none; color: wheat; margin-right: 30px;" >   <button class="reservation-button">Make reservation</button></a>
     </nav>
 
     <div class="mobile-menu" id="mobileMenu">
