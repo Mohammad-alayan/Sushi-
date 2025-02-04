@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Harbor</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+    
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="menu-button" onclick="toggleMenu()" style="background-color:black ; color: #2d4a3e;">☰</button>
+        
+        <span class="logo-text" style="margin-left: 70px;">Sushi Harbor</span>
+        
+     <a href="reserve.html"style="background-color:black ; color: #2d4a3e;">   <button class="reservation-button">Make reservation</button></a>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-button" onclick="toggleMenu()">✕</button>
+        <!-- Add mobile menu content here -->
+<ul><li id="li"> <a id="a" href="#">Home</a></li>
+    <li id="li"> <a id="a" href="reserve.html">Reservation</a></li>
+    <li id="li"> <a id="a" href="menu.html">Menu</a></li></ul>
+    <li id="li"> <a id="a" href="aboutus.html">About us</a></li>
+    </div>
+    <main>
+        <div class="hero-left" >
+            
+            <h1>Sushi Harbor</h1>
+            <p>Where culinary artistry meets ocean freshness, redefining sushi excellence in every bite.</p>
+            <a href="reserve.html" id="a"style="color:white;"> <button class="reservation-btn">Make reservation</button></a>
+        </div>
+        <div class="hero-right">
+            <div class="image-grid" >
+                <img src="rolls-sushi-sushi-rolls-wallpaper-preview.jpg" alt="Sushi with sauce" class="img1" loading="lazy">
+                <img src="sushi-for-beginners-phppVXksU.webp" alt="Sushi platter" class="img2" loading="lazy">
+                <img src="l-intro-1636465484.jpg" alt="Sushi rolls" class="img3" >
+            </div>
+            <div class="pattern"></div>
+        </div>
+    </div>
+
+
+    <!-- Content Grid Section -->
+    <section class="content-grid">
+        <div class="text-content">
+            <p>At SushiCraft, we take immense pride in upholding the rich traditions and expertise that each artisanal dish represents. Our dedication to a higher calling is a symphony of crafting, where each element tells its own unique narrative.</p>
+            <p>Every piece is meticulously crafted with precision and care, as we honor the generations of mastery that have been passed down. Each ingredient is thoughtfully sourced, ensuring authenticity while embracing innovation to create every roll, every piece of nigiri, and every delicate garnish that graces our plates. A perfect passion in pursuing the extraordinary.</p>
+            <button class="btn">About us</button>
+        </div>
+        <div class="image-container">
+            <img src="https://img.freepik.com/premium-photo/sushi-platter-hd-8k-wallpaper-stock-photographic-image_915071-32473.jpg" alt="Sushi preparation detail">
+            <div class="pattern-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Authenticity Section -->
+    <section class="authenticity">
+        <div class="image-container">
+            <img src="https://img.freepik.com/premium-photo/sushi-platter-hd-8k-wallpaper-stock-photographic-image_915071-32472.jpg" alt="Fresh fish preparation">
+        </div>
+        <div class="text-content">
+            <h2>Commitment to authenticity</h2>
+            <p>We believe that true elegance lies in simplicity and authenticity. Each dish tells a story, carefully crafted from the finest ingredients, flowing like magic. The most sublime flavors come from nature's bounty, where a steady hand guides each bite to shine for the sake of our guests.</p>
+            <div class="button-group">
+                <button class="btn"> <a href="aboutus.html" id="a" style="color: black;">Learn More</a></button>
+                <button class="btn"><a href="menu.html" id="a" style="color: black;"> Menu</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" style="width: 100%;">
+        <h2>Secure your culinary voyage now</h2>
+        <p id="p" style="color: aliceblue;">Reserve your table to savor the art of authenticity</p>
+        <a href="reserve.html"><button class="btn btn-white">Make reservation</button></a>
+    </section>
+    </main>
+
+    <script src="script.js">
+
+
+
+    </script>
+</body>
+</html>

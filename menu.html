@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+           
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #333;
+            position: absolute;
+            top: 50%;
+            z-index: -1;
+        }
+
+        .section-title span {
+            background-color: #fafafa;
+            padding: 0 15px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+
+        .item-details {
+            flex-grow: 1;
+        }
+
+        .item-name {
+            font-weight: 500;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vegetarian-icon::before {
+            content: '🌱';
+            font-size: 14px;
+        }
+
+        .item-description {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .item-price {
+            font-weight: 500;
+        }
+
+        .reservation-button {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 12px 24px;
+            border: 1px solid #333;
+            background: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+.main{
+    max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+}
+        .reservation-button:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .menu-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" style="padding:0px;" >
+        <button class="menu-button" onclick="toggleMenu()" style=" margin-left: 60px; background-color: wheat;">☰</button>
+        
+        <span class="logo-text" style="margin-left: 70px;">Sushi Harbor</span>
+        
+     <a href="reserve.html"  style=" text-decoration: none; color: wheat; margin-right: 60px;" >   <button class="reservation-button">Make reservation</button></a>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-button" onclick="toggleMenu()">✕</button>
+        <!-- Add mobile menu content here -->
+<ul><li id="li"> <a id="a" href="#">Home</a></li>
+    <li id="li"> <a id="a" href="reserve.html">Reservation</a></li>
+    <li id="li"> <a id="a" href="menu.html">Menu</a></li></ul>
+    <li id="li"> <a id="a" href="aboutus.html">About us</a></li>
+    </div>
+    <div class="main">
+    <h1>Dinner menu</h1>
+    <div class="menu-container">
+        <div class="section">
+            <h2 class="section-title"><span>APPETIZERS</span></h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Edamame salad</div>
+                    <div class="item-description">Edamame beans, mixed greens, red onion, sesame seeds, chilli pile salad</div>
+                </div>
+                <div class="item-price">$9</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Tuna tartare tacos</div>
+                    <div class="item-description">Fresh tuna, avocado, crispy wonton shells, scallions, sriracha</div>
+                </div>
+                <div class="item-price">$19</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name vegetarian-icon">Crispy Tempura Veggies</div>
+                    <div class="item-description">Zucchini, bell pepper, sweet potato, tempura batter, chilli powder</div>
+                </div>
+                <div class="item-price">$12</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name vegetarian-icon">Sakura Spring Rolls</div>
+                    <div class="item-description">Rice paper, vermicelli noodles, cucumber, carrot, hoisin sauce</div>
+                </div>
+                <div class="item-price">$13</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Seared Scallop Carpaccio</div>
+                    <div class="item-description">Fresh scallops, citrus-soy marinade, radis slices, yuzu kosho</div>
+                </div>
+                <div class="item-price">$20</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span>BUNS</span></h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Bao Bun Sliders</div>
+                    <div class="item-description">Bao buns, Korean-style short rib, pickled daikon, gochujang mayo</div>
+                </div>
+                <div class="item-price">$9</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name vegetarian-icon">Truffle Shiitake Dim Sum</div>
+                    <div class="item-description">Dim sum wrappers, shiitake mushrooms, truffle oil, garlic</div>
+                </div>
+                <div class="item-price">$11</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Peking Duck Bao</div>
+                    <div class="item-description">Bao Buns, Peking duck slices, hoisin sauce, cucumber</div>
+                </div>
+                <div class="item-price">$18</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Shrimp Har Gow</div>
+                    <div class="item-description">Dim sum wrappers, shrimps, water chestnut, ginger soy sauce</div>
+                </div>
+                <div class="item-price">$16</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name vegetarian-icon">Veggie Bao Trio</div>
+                    <div class="item-description">Bao buns, teriyaki tofu, tempura eggplant, portobello mushroom</div>
+                </div>
+                <div class="item-price">$15</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span>NIGIRI</span></h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Truffle mushroom</div>
+                    <div class="item-description">Sushi rice, shiitake mushroom sautéed with truffle oil, truffle salt</div>
+                </div>
+                <div class="item-price">$19</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Wagyu Beef Tataki</div>
+                    <div class="item-description">Sushi rice, seared wagyu beef slices, ponzu sauce, scallions</div>
+                </div>
+                <div class="item-price">$24</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name vegetarian-icon">Grilled Unagi and Avocado</div>
+                    <div class="item-description">Sushi rice, grilled eel, avocado slices, sriracha</div>
+                </div>
+                <div class="item-price">$20</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name vegetarian-icon">Tempura Sweet Potato</div>
+                    <div class="item-description">Sushi rice, tempura-battered sweet potato, wasabi mayo, chives</div>
+                </div>
+                <div class="item-price">$15</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Mango Tango</div>
+                    <div class="item-description">Sushi rice, fresh mango slices, jicama, mint leaves, chilli glaze</div>
+                </div>
+                <div class="item-price">$15</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span>SUSHI ROLLS</span></h2>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Inferno Serpent</div>
+                    <div class="item-description">Nori, sushi rice, spicy tuna, avocado, cucumber, unagi slices</div>
+                </div>
+                <div class="item-price">$21</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name vegetarian-icon">Rainbow</div>
+                    <div class="item-description">Nori, sushi rice, carrot, cucumber, avocado, bell pepper, mango</div>
+                </div>
+                <div class="item-price">$19</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Volcano</div>
+                    <div class="item-description">Nori, sushi rice, tempura shrimp, cucumber, spicy crab mix, wasabi</div>
+                </div>
+                <div class="item-price">$24</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name">Surf & Turf</div>
+                    <div class="item-description">Nori, sushi rice, seared filet mignon slices, tempura shrimp, chilli</div>
+                </div>
+                <div class="item-price">$28</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-details">
+                    <div class="item-name vegetarian-icon">Green Goddess</div>
+                    <div class="item-description">Nori, sushi rice, asparagus tempura, spinach, wasabi aioli</div>
+                </div>
+                <div class="item-price">$20</div>
+            </div>
+        </div>
+    </div>
+   <a href="reserve.html" style="color: black;text-decoration: none;"> <button style="color: black;" class="reservation-button">Make reservation</button></a>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
