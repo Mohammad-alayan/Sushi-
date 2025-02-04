@@ -7,6 +7,29 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
     <style>
+          .navbar{
+            height: 100px;
+        }
+         @media (max-width: 768px) {
+            .reservation-button {
+        width: 100%;
+        font-size: 15px;
+        max-width: 300px;
+        margin-left: 23% !important;
+        color: white !important;
+        background-color: #2d4a3e !important;
+
+    }
+    .navbar{
+        height: 100px !important;
+    }
+ 
+    .logo-text{
+        font-size: 16px !important;
+        padding-left: 10px !important;
+
+    }
+        }
         :root {
             --primary-green: #2d4a3e;
             --accent-coral: #e8b4a2;
@@ -160,7 +183,7 @@
         
             <span class="logo-text" style="margin-left: 70px; color: #2d4a3e;">Sushi Harbor</span>
         
-        <button class="reservation-button"> <a href="#" style="text-decoration: none; font-size: 20px; color: black;">Make reservation</a></button>
+        <button class="reservation-button" style=" background-color:#2d4a3e;"> <a href="#" style="text-decoration: none; font-size: 20px; color: white;">Make reservation</a></button>
     </nav>
 
     <div class="mobile-menu" id="mobileMenu">

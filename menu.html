@@ -6,6 +6,29 @@
     <title>Dinner Menu</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        .navbar{
+            height: 100px;
+        }
+         @media (max-width: 768px) {
+            .reservation-button {
+        width: 100%;
+        font-size: 15px;
+        max-width: 300px;
+        margin-left: 23% !important;
+        color: black !important;
+        background-color: wheat !important;
+
+    }
+    .navbar{
+        height: 100px !important;
+    }
+ 
+    .logo-text{
+        font-size: 16px !important;
+        padding-left: 10px !important;
+
+    }
+        }
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
            
@@ -127,7 +150,7 @@
     <div class="mobile-menu" id="mobileMenu">
         <button class="close-button" onclick="toggleMenu()">✕</button>
         <!-- Add mobile menu content here -->
-<ul><li id="li"> <a id="a" href="#">Home</a></li>
+<ul><li id="li"> <a id="a" href="index.html">Home</a></li>
     <li id="li"> <a id="a" href="reserve.html">Reservation</a></li>
     <li id="li"> <a id="a" href="menu.html">Menu</a></li></ul>
     <li id="li"> <a id="a" href="aboutus.html">About us</a></li>
